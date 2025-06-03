@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+
+class Car{
+public:
+string brand;
+int speed;
+
+    Car(string b,int s){
+        brand = b;
+        speed=s;
+        cout<<"Constructor called "<<brand<<endl;
+        
+    }
+    void display(){
+        cout<<"the car is "<<brand<<"speed is "<<speed<<endl;
+    }
+    
+    ~Car(){
+        cout<<"Destructor called "<<brand;
+    
+    }
+};
+
+
+int main(){
+   Car c("BMW",200);
+   c.display();
+   
+}
