@@ -10,16 +10,14 @@ public:
         speed =s;
     }
     void drive(){
-        cout << brand << " " << speed << endl;
+        cout<< brand << " " << speed <<endl;
     }
 };
 
 int main(){
    Car c;
-   
    c.setBrand("Audi");
    c.setSpeed(300);
    c.drive();
-
-   return 0;
+   return 0;
 }
